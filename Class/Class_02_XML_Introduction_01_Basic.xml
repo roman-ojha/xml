@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--|           |               | -->
+<!--(which file)(which version)(endoding formate)-->
+
+
+<!-- 
+        -> we have a concept called as XML Parser
+        -> XML Parser will understand the XML format that we write
+ -->
+
+<!-- 
+    * Rules of XML.....
+        1) one root tag
+        2) XML is case sensitive
+        3) every opening tag needs a closing tag
+        4) every attribute value should be inside a double/single quote
+ -->
+
+ <!-- 
+    -> to work with Parser we have to spacify something called as Grammer
+    -> Grammer....
+        a) Sturecture :
+            <employee>
+                <name></name>
+            </employee>
+        b) Content :
+            Roman
+            3000
+
+  -->
+
+<employees>
+
+    <employee>                      <!--|-->
+        <name>Roman</name>          <!--|               Employee 01-->
+        <salary>3000</salary>       <!--|-->
+    </employee>                     <!--|-->
+
+    
+    <employee>                      <!--|-->
+        <name>Razz</name>           <!--|               Employee 02-->
+        <salary>4000</salary>       <!--|-->
+    </employee>                     <!--|-->
+
+<!-- Now if the data have the same value then to differentiate between the we have use attribute -->
+    <employee empid="e1">           <!--|-->
+        <name>RazzRoman</name>      <!--|               Employee 03-->
+        <salary>3000</salary>       <!--|-->
+    </employee>                     <!--|-->
+
+    
+    <employee empid="e2">                      <!--|-->
+        <name>RazzRoman</name>      <!--|               Employee 04-->
+        <salary>3000</salary>       <!--|-->
+    </employee>   
+
+</employees>

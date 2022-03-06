@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    Grammer....
+        a) Structure -> DTD -> Document type Definition
+
+ -->
+
+<!DOCTYPE employees SYSTEM "Class_03.dtd">
+<!-- so, The dtd file is in system so we have to use 'SYSTEM' and give the file name -->
+
+ <employees>
+
+    <employee empid="e1">                      
+        <name>Roman</name>                       
+        <salary>3000</salary>       
+    </employee>                     
+
+    
+    <employee empid="e1">                      
+        <name>Razz</name>                        
+        <salary>4000</salary>       
+    </employee>                     
+
+<!-- Now if the data have the same value then to differentiate between the we have use attribute -->
+    <employee empid="e1" lang="">   
+                <!-- so, we had mention in dtd file as the default value is 'Java' so we don't event have to mention it here now -->
+        <name>RazzRoman</name>                  
+        <salary>3000</salary>       
+    </employee>                     
+
+    
+    <employee empid="e2" lang="Python">                     
+        <!-- <name>RazzRoman</name>       -->
+        <!--  here if i will not spacify the name, then also this will not show an error so to so error we have to spacigy the rule-->
+        <!-- So to do that we have to make a dtd file to mention that -->
+        <!-- only after that error will show -->
+        <name>RazzRoman</name>      
+        <salary>3000</salary>       
+    </employee>   
+
+</employees>

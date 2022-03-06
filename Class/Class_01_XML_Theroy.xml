@@ -1,0 +1,36 @@
+<!--
+    
+     XML => eXtensible markup language
+    -> in html we use tag Like: <> (which is called as markup)
+    -> but it XML you can add your own costum tag that's why we say extensible or expandeble
+    -> to send data from one place to other place we can use XML
+    -> Ex: from server to clint
+    -> Like : lets say we want to send employee salary = 3000 then:
+            <salary>3000</salary>
+
+    => Use of XML:
+        a) Transfer data
+        b) configure the framework
+        c) Design Android
+    -> But, now a days for Transfer data we use JSON(Javascript Object Notation )
+    -> XML Ex: to store my name:
+            <name>Roman Ojha</name>
+    -> Every XML tag need a root tag EX:
+            <Information>
+                <Info>
+                    <name>Roman Ojha</name>
+                    <salary>3000</salary>
+                </Info>
+
+                <Info>
+                    <name>Razz Roman</name>
+                    <salary>4000</salary>
+                </Info>
+            </Information>
+    -> In this XML file we have two thing and we can spacify Grammer for XML
+        a) Structure 
+            -> we can define the Structure Grammer with the help of DTD(document type defination)
+        b) Content(Data)
+            -> we can define the Grammer for the Content with the help of Schema 
+             
+-->

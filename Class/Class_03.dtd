@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- By default we can only have one child of same tag so to solve the problem we have to metion '+' after child tag -->
+<!ELEMENT employees (employee+)>
+<!ELEMENT employee (name,salary)>
+<!-- so, Here we mention that element 'employes' have 'employee'   and element 'employee' have 'name, salary' -->
+<!ELEMENT name(#PCDATA)>
+<!-- So, Here we are putting what is the type of name so, the type of name is 'PCDATA'(parse charater data)-->
+<!ELEMENT salary(#PCDATA)>
+<!-- we will again get an error if we will not mention about the attribute -->
+<!ATTLIST employee empid ID #REQUIRED>
+<!ATTLIST employee lang (jAVA|C|Python) "jAVA">
+<!-- So, here we can spacify the spacific of default 'lang' here we spacify that we can have 'Java or C or Python' and the default value is 'Java'-->
+<!-- But if we will mention other then these 'lang' then there will be an error -->
